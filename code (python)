@@ -1,0 +1,64 @@
+
+spongebob = 0
+squidward = 0
+patrick = 0
+sandy = 0
+Mr_Krabs = 0
+
+#question 1--------------------------------------------------------------------
+answer = input("Whats your favorite color? (Blue, Yellow, Red, Pink, White)")
+if answer == 'Blue':
+    squidward += 1
+elif answer == 'Yellow':
+    spongebob += 3
+elif answer == 'Pink':
+    patrick += 1
+elif answer == 'Red':
+    Mr_Krabs += 1
+elif answer == 'White':
+    Sandy += 1
+
+#question 2--------------------------------------------------------------------
+answer = input("Do you like your job? (Yes or No)")
+if answer == 'No':
+    squidward += 2
+    Patrick += 1
+elif answer == 'Yes':
+    spongebob += 2
+    sandy += 1
+    Mr_Krabs += 1
+
+#question 3--------------------------------------------------------------------
+answer = input("Do you like rollarcoasters? (Yes or No)")
+if answer == 'No':
+    squidward += 3
+elif answer == 'Yes':
+    spongebob += 1
+    sandy += 1
+    Mr_Krabs += 1
+    patrick += 1
+
+#question 4--------------------------------------------------------------------
+answer = input("Do you like music? (Yes or No)")
+if answer == 'No':
+    squidward -= 3
+elif answer == 'Yes':
+    spongebob += 1
+    sandy += 1
+    Mr_Krabs += 1
+    patrick += 1
+    Squidward += 2
+
+if squidward >= spongebob and squidward >= sandy and squidward >= patrick and squidward >= Mr_Krabs:
+    print("you are squidward")
+elif spongebob >= patrick and spongebob >= sandy and spongebob >= Mr_Krabs:
+    print ("you are spongebob")
+elif patrick >= sandy and patrick >= Mr_Krabs:
+    print("you are patrick")
+elif sandy >= Mr_Krabs:
+    print ("you are sandy")
+else:
+    print("you are Mr.Krabs")
+
+
+
